@@ -1,0 +1,27 @@
+{
+	"name": "poc_datawarehouse",
+	"properties": {
+		"Name": "poc_datawarehouse",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true,
+			"DerivedModelDBInfo": "{\"ModelDirectives\":{\"BaseModel\":{\"Name\":\"Banking\",\"Version\":\"0.1.0\"}}}",
+			"x-ms-usageinfo": "AzureSynapseDatabaseTemplate"
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://fsprsa@adls2prsa.dfs.core.windows.net/poc_datawarehouse",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "asaprsa-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 5,
+		"ObjectId": "7fe3e9ae-ae0a-4b5d-97c5-4a16753e7ec9"
+	},
+	"type": "DATABASE"
+}

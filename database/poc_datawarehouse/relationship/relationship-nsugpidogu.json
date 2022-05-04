@@ -1,0 +1,26 @@
+{
+	"name": "relationship-nsugpidogu",
+	"properties": {
+		"Name": "relationship-nsugpidogu",
+		"EntityType": "RELATIONSHIP",
+		"Namespace": {
+			"DatabaseName": "poc_datawarehouse"
+		},
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"FromTableName": "Table_2",
+		"ToTableName": "Table_1",
+		"ColumnRelationshipInformations": [
+			{
+				"FromColumnName": "Column_1",
+				"ToColumnName": "Column_1"
+			}
+		],
+		"RelationshipType": 0,
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "73c4d528-9359-437f-88d4-b49f4d9cfb81"
+	},
+	"type": "RELATIONSHIP"
+}

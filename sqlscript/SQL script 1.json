@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE dbo.employee\n(\n    empid int NOT NULL,\n    name char(30)\n)\nWITH\n(\n    DISTRIBUTION = HASH (empid),\n    CLUSTERED COLUMNSTORE INDEX\n)\nGO\n\ninsert into dbo.employee\nvalues('1001', 'Prakash')\nGO\n\nselect * from dbo.employee\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "sqlpoolprsa",
+				"poolName": "sqlpoolprsa"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
